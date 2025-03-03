@@ -1,9 +1,90 @@
 .footer{
-
+    background-color: #000;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
     padding: 4rem 6rem;
-    
-    color: #000;
 }
+
+.footer .top h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8f8f8;
+  }
+
+  .footer .top p {
+    color: #b0b0b0;
+    font-size: 1rem;
+  }
+    
+  .footer .top div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between icons */
+  }
+  
+  .footer .top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .footer .top a:hover {
+    transform: scale(1.2);
+    color: #00acee; 
+  }
+  
+  .footer .top svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  
+  .footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .footer .bottom div {
+    flex: 1;
+    min-width: 150px;
+    text-align: left;
+  }
+  
+  .footer .bottom h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #f8f8f8;
+  }
+  
+  .footer .bottom a {
+    display: block;
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .bottom a:hover {
+    color: white;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    color: #b0b0b0;
+    border-top: 1px solid #333;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
 
 .top{
 
@@ -12,18 +93,6 @@
     text-align: start;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.top i{
-
-    color: #000;
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-.top i:hover{
-
-    color: #01959a; 
 }
 
 .bottom{
@@ -57,9 +126,29 @@
     font-size: 1.1rem;
 }
 
-.footer-copyright{
 
-    padding-top: 4rem ;
+
+.footer-copyright {
+  text-align: center;
+  font-size: 1rem;
+  color: #b0b0b0;
+  border-top: 1px solid #333;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.footer-copyright h3 {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: white;
+}
+
+.footer-copyright svg {
+  width: 18px;
+  height: 18px;
 }
 
 

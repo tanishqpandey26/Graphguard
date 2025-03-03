@@ -1,5 +1,4 @@
 import React from "react";
-import MainButton from "../common/MainButton";
 import "./HeroSection.css";
 
 function HeroSection() {

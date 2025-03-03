@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { X } from "lucide-react";
-import MainButton from "./MainButton";
+
 
 function NavBar() {
   const [menu, setMenu] = useState(false);
@@ -13,7 +13,6 @@ function NavBar() {
     setMenu(!menu);
   };
 
- 
   const handleNavigation = (path: string) => {
     router.push(path);
     setMenu(false); 
@@ -29,10 +28,11 @@ function NavBar() {
               GraphGuard
             </h1>
           </div>
+          
           <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
             <button
               onClick={() => handleNavigation("/")}
-              className="hover:text-primary cursor-pointer font-[500] text-gray"
+              className="hover:text-primary cursor-pointer font-[500] text-gray "
             >
               Home
             </button>

@@ -5,13 +5,11 @@ import FooterSection from "@/components/sections/FooterSection";
 
 function Team() {
   return (
-    
     <>   
         <NavBar />
         <TeamSection/>
         <FooterSection />
-    </>
-    
+    </> 
   );
 }
 

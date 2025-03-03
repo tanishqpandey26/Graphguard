@@ -1,11 +1,13 @@
 import React from "react";
 import { Separator } from "../ui/separator";
 import "./FooterSection.css";
+import { Copyright, Linkedin, Github, FileText, Twitter } from "lucide-react";
 
 function FooterSection() {
   return (
     <>
       <div className='footer'>
+
         <div className='top'>
           <div>
             <h1>GraphGuard</h1>
@@ -18,7 +20,7 @@ function FooterSection() {
               aria-label='LinkedIn Profile'
               title='LinkedIn'
             >
-              <i className='fa-brands fa-linkedin'></i>
+              <Linkedin/>
             </a>
 
             <a
@@ -26,7 +28,7 @@ function FooterSection() {
               aria-label='GitHub Profile'
               title='GitHub'
             >
-              <i className='fa-brands fa-github'></i>
+              <Github/>
             </a>
 
             <a
@@ -34,7 +36,7 @@ function FooterSection() {
               aria-label='Twitter Profile'
               title='Twitter'
             >
-              <i className='fa-brands fa-twitter'></i>
+             <Twitter/>
             </a>
 
             <a
@@ -42,7 +44,7 @@ function FooterSection() {
               aria-label='View Digital Resume'
               title='Resume'
             >
-              <i className='fa-solid fa-file-pdf'></i>
+              <FileText/>
             </a>
           </div>
         </div>
@@ -50,7 +52,7 @@ function FooterSection() {
         <div className='bottom'>
           <div>
             <h4>Project</h4>
-            <a href='/'>Tripper</a>
+            <a href='https://tripper-ui.vercel.app/'>Tripper</a>
             <a href='https://cotlog-social-blog-website.vercel.app/'>Cotlog</a>
             <a href='https://digital-resume-fawn.vercel.app'>Digital Resume</a>
           </div>
@@ -77,9 +79,10 @@ function FooterSection() {
           </div>
         </div>
 
-        <div className='footer-copyright'>
-          <h3>Copyright Tanishq Pandey</h3>
-        </div>
+      <div className="footer-copyright">
+      <h3> Copyright <Copyright />Tanishq Pandey</h3>
+      </div>
+
       </div>
 
       <Separator />
