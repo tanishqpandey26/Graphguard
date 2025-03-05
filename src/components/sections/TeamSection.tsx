@@ -5,7 +5,7 @@ import "./TeamStyles.css";
 const teamMembers = [
   {
     name: "Tanishq Pandey",
-    role: "Frontend Developer",
+    role: "One time CAT Exam looser & developer of this faltu webiste",
     description: "Passionate about building user-friendly web applications with modern technologies.",
     linkedin: "https://www.linkedin.com/in/pandey26tanishq/",
     github: "https://github.com/tanishqpandey26",
@@ -14,8 +14,8 @@ const teamMembers = [
     image: "/images/tanishq.jpeg",
   },
   {
-    name: "Jane Smith",
-    role: "Backend Developer",
+    name: "Devesh Singh Negi",
+    role: "two time gate exam looser & Owner of Poochi",
     description: "Specializes in scalable backend solutions and database management.",
     linkedin: "https://linkedin.com/in/janesmith",
     github: "https://github.com/janesmith",
@@ -24,8 +24,8 @@ const teamMembers = [
     image: "/images/devesh.jpeg",
   },
   {
-    name: "Alice Brown",
-    role: "UI/UX Designer",
+    name: "Devom Bhatt",
+    role: "two time gate exam looser",
     description: "Loves crafting beautiful and intuitive user experiences. bhatt juuuuuuuuuu",
     linkedin: "https://linkedin.com/in/alicebrown",
     github: "https://github.com/alicebrown",
@@ -34,14 +34,14 @@ const teamMembers = [
     image: "/images/devom.jpeg",
   },
   {
-    name: "Alice Brown",
-    role: "UI/UX Designer",
+    name: "Sanjana Verma",
+    role: "female quota diversity hiring",
     description: "Loves crafting beautiful and intuitive user experiences. bhatt juuuuuuuuuu",
     linkedin: "https://linkedin.com/in/alicebrown",
     github: "https://github.com/alicebrown",
     twitter: "https://twitter.com/alicebrown",
     email: "mailto:johndoe@example.com",
-    image: "/images/devom.jpeg",
+    image: "/images/sanjana.jpeg",
   },
 ];
 
