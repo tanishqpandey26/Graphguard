@@ -5,7 +5,7 @@ import "./TeamStyles.css";
 const teamMembers = [
   {
     name: "Tanishq Pandey",
-    role: "One time CAT Exam looser & developer of this faltu webiste",
+    role: "Full Stack Developer",
     description: "Passionate about building user-friendly web applications with modern technologies.",
     linkedin: "https://www.linkedin.com/in/pandey26tanishq/",
     github: "https://github.com/tanishqpandey26",
@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Devesh Singh Negi",
-    role: "two time gate exam looser & Owner of Poochi",
+    role: "AI/ML Engineer",
     description: "Specializes in scalable backend solutions and database management.",
     linkedin: "https://linkedin.com/in/janesmith",
     github: "https://github.com/janesmith",
@@ -25,7 +25,7 @@ const teamMembers = [
   },
   {
     name: "Devom Bhatt",
-    role: "two time gate exam looser",
+    role: "Data Engineer",
     description: "Loves crafting beautiful and intuitive user experiences. bhatt juuuuuuuuuu",
     linkedin: "https://linkedin.com/in/alicebrown",
     github: "https://github.com/alicebrown",
@@ -35,7 +35,7 @@ const teamMembers = [
   },
   {
     name: "Sanjana Verma",
-    role: "female quota diversity hiring",
+    role: "System Engineer",
     description: "Loves crafting beautiful and intuitive user experiences. bhatt juuuuuuuuuu",
     linkedin: "https://linkedin.com/in/alicebrown",
     github: "https://github.com/alicebrown",

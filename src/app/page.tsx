@@ -5,6 +5,7 @@ import ContactForm from "@/components/sections/ContactForm";
 import ServiceSection from "@/components/sections/ServiceSection";
 import PerformanceSection from "@/components/sections/PerformanceSection";
 import VideoPlayerSection from "@/components/sections/VideoPlayerSection";
+import DocsSection from "@/components/sections/DocsSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 
       <PerformanceSection />
       <ContactForm />
+      <DocsSection/>
       <FooterSection />
     </main>
   );

@@ -53,7 +53,7 @@ function ContactForm() {
             
             <div className="contact-content">
                 <div className="contact-image">
-                    <img src="/images/contact-us.jpg" alt="contact-image" />
+                    <img src="/images/contact-us.png" alt="contact-image" />
                 </div>
     
                 <div className="form-container"> 

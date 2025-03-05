@@ -1,5 +1,4 @@
 import React from "react";
-import { Separator } from "../ui/separator";
 import "./FooterSection.css";
 import { Copyright, Linkedin, Github, FileText, Twitter } from "lucide-react";
 
@@ -84,8 +83,6 @@ function FooterSection() {
       </div>
 
       </div>
-
-      <Separator />
     </>
   );
 }

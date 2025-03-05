@@ -1,104 +1,48 @@
-/* Container Styling */
 .video-player-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 11.31rem;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  @media (min-width: 768px) {
-    .video-player-section {
-      flex-direction: row;
-    }
-  }
-  
-  /* Content Styling */
-  .content-wrapper {
-    max-width: 40rem;
-    text-align: center;
-    animation: slideInFromLeft 1.2s ease-in-out;
-  }
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.video-wrapper {
+  width: 100%;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
   .title {
-    color: #1e90ff; /* light blue */
-    font-weight: bold;
-    font-size: 2rem;
-    animation: bounceIn 1.5s ease-in-out;
+    font-size: 20px;
   }
-  
+
   .description {
-    color: #a9a9a9; /* custom light gray */
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    font-size: 14px;
   }
-  
-  /* Video Wrapper Styling */
-  .video-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 32rem;
-    animation: slideInFromRight 1.2s ease-in-out;
-  }
-  
-  .video-player {
-    border-radius: 0.5rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .video-player:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Keyframes for Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideInFromLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideInFromRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes bounceIn {
-    0% {
-      transform: scale(0.8);
-      opacity: 0.5;
-    }
-    50% {
-      transform: scale(1.1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
+}
