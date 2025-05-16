@@ -30,7 +30,7 @@ function Dashboard() {
         <div className="container">
           <h1 className="heading">Upload Your CSV File</h1>
           <p className="description">
-            Select a CSV file to simulate model testing. You'll be routed to query form after processing is completed.
+            Select a CSV file to simulate model testing. You will be routed to query form after processing is completed.
           </p>
 
          <label className="uploadBox">
