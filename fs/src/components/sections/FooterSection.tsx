@@ -15,7 +15,7 @@ function FooterSection() {
 
           <div>
           <a
-              href='https://github.com/tanishqpandey26/Graphguard'
+              href='https://github.com/tanishqpandey26/graphguard'
               aria-label='GitHub Profile'
               title='GitHub'
             >

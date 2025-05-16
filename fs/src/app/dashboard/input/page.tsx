@@ -31,6 +31,13 @@ export default function TransactionForm() {
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
+  const emptyFields = Object.entries(formData).filter(([key, value]) => !value);
+  if (emptyFields.length > 0) {
+    console.warn("Form has empty fields, skipping submit:", emptyFields.map(f => f[0]));
+    setResult("Please fill all required fields before submitting.");
+    return; // Don't submit if empty
+  }
+
   try {
     const res = await axios.post(
       process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/predict",
