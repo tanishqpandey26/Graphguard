@@ -1,0 +1,86 @@
+.aboutSection {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  margin-top: 2.5%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.routesInfo {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.subheading {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.routesList {
+  list-style: none;
+  padding: 0;
+}
+
+.routesList li {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.routesList p {
+  margin: 0.25rem 0 0;
+  color: #555;
+}
+
+.link {
+  font-weight: 600;
+  color: #0070f3;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .aboutSection {
+        margin-top: 5%;
+}
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .routesList li {
+    padding: 1rem;
+  }
+}

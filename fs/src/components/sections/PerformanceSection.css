@@ -1,0 +1,148 @@
+.performance-section {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.performance-section h1 {
+  margin-top: 5%;
+  font-size: 2.5rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: auto;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.performance-section p {
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.model-m-link {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00acee;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.metrics-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.metric-card{
+  border: 1px solid #000;
+}
+@media (min-width: 768px) {
+  .metrics-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .metrics-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.metric-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  text-align: center;
+  transform: translateY(10px);
+  opacity: 0;
+  animation: fadeUp 0.8s ease-in-out forwards;
+}
+
+.metric-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.metric-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.metric-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.metric-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.metric-card:nth-child(5) {
+  animation-delay: 1s;
+}
+.metric-card:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+
+.metric-image {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  margin: 0 auto 1rem auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.metric-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.metric-description {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.5;
+}
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

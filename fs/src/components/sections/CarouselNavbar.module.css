@@ -1,0 +1,37 @@
+.carouselNav {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  padding: 0.5rem 1rem;
+}
+
+.navItem {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #3659B1;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.navItem:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .navItem {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
