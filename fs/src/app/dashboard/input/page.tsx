@@ -18,8 +18,6 @@ export default function TransactionForm() {
     trans_num: "",
   });
 
-  console.log("Submiited form",formData);
-
   const [result, setResult] = useState("");
 
   const handleChange = (
@@ -29,32 +27,38 @@ export default function TransactionForm() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const emptyFields = Object.entries(formData).filter(([key, value]) => !value);
-  if (emptyFields.length > 0) {
-    console.warn("Form has empty fields, skipping submit:", emptyFields.map(f => f[0]));
-    setResult("Please fill all required fields before submitting.");
-    return; 
-  }
+    const emptyFields = Object.entries(formData).filter(([_, value]) => !value);
+    if (emptyFields.length > 0) {
+      console.warn("Form has empty fields, skipping submit:", emptyFields.map(f => f[0]));
+      setResult("Please fill all required fields before submitting.");
+      return;
+    }
 
-  try {
-    const res = await axios.post(
-      process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/predict",
-      formData
-    );
+    const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
-    const { fraud_probability, prediction } = res.data;
+    try {
+      const res = await axios.post(
+        `${API_BASE_URL}/predict`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
-    // Save formatted result as a string
-    setResult(
-      `Fraud Probability: ${fraud_probability.toFixed(3)}\nClassification: ${prediction}`
-    );
-  } catch (err) {
-    console.error("Error:", err);
-    setResult("An error occurred while processing.");
-  }
-};
+      const { fraud_probability, prediction } = res.data;
+
+      setResult(
+        `Fraud Probability: ${fraud_probability.toFixed(3)}\nClassification: ${prediction}`
+      );
+    } catch (err: any) {
+      console.error("Error:", err?.response?.data || err.message || err);
+      setResult("An error occurred while processing your request.");
+    }
+  };
 
   return (
   <form onSubmit={handleSubmit} className="form-container">
