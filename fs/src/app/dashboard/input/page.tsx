@@ -35,7 +35,7 @@ export default function TransactionForm() {
   if (emptyFields.length > 0) {
     console.warn("Form has empty fields, skipping submit:", emptyFields.map(f => f[0]));
     setResult("Please fill all required fields before submitting.");
-    return; // Don't submit if empty
+    return; 
   }
 
   try {
