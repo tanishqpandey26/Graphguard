@@ -7,7 +7,7 @@ function PerformanceSection() {
   const performanceData = [
     {
       id: 0,
-      value: "96.3%",
+      value: "99.12%",
       metricName: "Accuracy",
       description:
         "The model correctly identifies fraudulent and non-fraudulent transactions with high precision.",
@@ -16,7 +16,7 @@ function PerformanceSection() {
 
     {
       id: 1,
-      value: "96.3%",
+      value: "26.36%",
       metricName: "Precision",
       description:
         "The percentage of transactions classified as fraudulent that were indeed fraudulent.",
@@ -25,7 +25,7 @@ function PerformanceSection() {
 
     {
       id: 2,
-      value: "96.3%",
+      value: "81.69%",
       metricName: "Recall",
       description:
         "The model successfully detected the majority of fraudulent transactions.",
@@ -34,29 +34,11 @@ function PerformanceSection() {
 
     {
       id: 3,
-      value: "96.3%",
+      value: "39.86%",
       metricName: "F1-Score",
       description:
         "The harmonic mean of precision and recall ensures a balanced measure of the model's performance.",
       imageUrl: "/images/f1score.png",
-    },
-
-    {
-      id: 4,
-      value: "96.3%",
-      metricName: "Detection Time",
-      description:
-        "Average time taken by the GNN model to evaluate and classify a transaction.",
-      imageUrl: "/images/detection-time.png",
-    },
-
-    {
-      id: 5,
-      value: "96.3%",
-      metricName: "Detection Time",
-      description:
-        "Average time taken by the GNN model to evaluate and classify a transaction.",
-      imageUrl: "/images/detection-time.png",
     },
 
   ];
